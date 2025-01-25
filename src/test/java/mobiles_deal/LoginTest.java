@@ -67,7 +67,7 @@ public class LoginTest extends Basetesthere {
 	@DataProvider(name="logindata")
 	public String[][] getdata() {
 		
-		String[][] mycredentials= {{"8151041889","Amazon@123"},{"8151041889","Amazon@123"},{"8151041889","Amazon@123"}};
+		String[][] mycredentials= {{"8151041889","Amazon@123"},{"8151041889","Amazon@123"},{"8151041889","Amazon@123"},{"8151041889","Amazon@123"}};
 		return mycredentials;
 	}
 
