@@ -17,7 +17,7 @@
 			<version>7.10.2</version>
 			<scope>test</scope>
 		</dependency>
-				<dependency>
+		<dependency>
 			<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -28,6 +28,45 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.18.0</version>
 		</dependency>
-		
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>Regression</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.5.2</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>testsuites/testngregression.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+				<profile>
+			<id>smoke</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.5.2</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>testsuites/testngsmoke.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+	</profiles>
 </project>
