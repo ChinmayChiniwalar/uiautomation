@@ -32,9 +32,9 @@ System.out.println(System.getProperty("user.dir"));
 		FileInputStream fis = new FileInputStream(
 		System.getProperty("user.dir") + "//src//main//resources//common.properties");
 		prop.load(fis);
-		String browser = System.getProperty("browser")!=null?System.getProperty("browser"):prop.getProperty("Browser");
+		//sString browser = System.getProperty("browser")!=null?System.getProperty("browser"):prop.getProperty("Browser");
 		
-		//String browser = prop.getProperty("Browser");
+		String browser = prop.getProperty("Browser");
 		System.out.println(browser);
 		if(browser.contains("headless")) {
 			options.addArguments("headless");	

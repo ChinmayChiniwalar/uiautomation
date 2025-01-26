@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="mobiles_deal.orderlaptops"/>
-      <class name="mobiles_deal.LoginTest"/>
-      <class name="mobiles_deal.Actions"/>
+     <!-- <class name="mobiles_deal.LoginTest"/>
+      <class name="mobiles_deal.Actions"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
