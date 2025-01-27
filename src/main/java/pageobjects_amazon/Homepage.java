@@ -21,7 +21,7 @@ public class Homepage extends Abstractcompnents{
 	@FindBy(xpath="//span[@id='nav-link-accountList-nav-line-1']")WebElement account;
 	@FindBy(id="searchDropdownBox")WebElement allcategoriesdropdown;
 	@FindBy(id="nav-search-submit-button")WebElement searchbutton;
-	
+	@FindBy(css="#twotabsearchtextbox")private WebElement searchbox;
 //System.out.println(driver.findElement(By.xpath("//span[@id='nav-link-accountList-nav-line-1']")).getText());
 //driver.findElement(By.xpath("//span[@id='nav-link-accountList-nav-line-1']")).click();
 //	WebElement categoriesdp = driver.findElement(By.id("searchDropdownBox"));
@@ -51,6 +51,14 @@ public class Homepage extends Abstractcompnents{
 		return electronics; 
 		
 	}
+	
+	public void searchitem(String searchitem) {
+		searchbox.sendKeys(searchitem);
+		searchbutton.click();
+	}
+	
+	
+	
 	
 	
 	
