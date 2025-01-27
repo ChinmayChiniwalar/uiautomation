@@ -4,7 +4,11 @@
 	<artifactId>MobileCategory</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	
+<<<<<<< HEAD
 	    <build>
+=======
+    <build>
+>>>>>>> 6e9f37bca785b15609879b0749a4edb8f751c27e
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -15,7 +19,11 @@
                 </configuration>
             </plugin>
         </plugins>
+<<<<<<< HEAD
     </build>
+=======
+    </build>    
+>>>>>>> 6e9f37bca785b15609879b0749a4edb8f751c27e
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -28,7 +36,6 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.10.2</version>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
@@ -55,25 +62,6 @@
 							<configuration>
 								<suiteXmlFiles>
 									<suiteXmlFile>testsuites/testngregression.xml</suiteXmlFile>
-								</suiteXmlFiles>
-							</configuration>
-						</plugin>
-					</plugins>
-				</pluginManagement>
-			</build>
-		</profile>
-				<profile>
-			<id>smoke</id>
-			<build>
-				<pluginManagement>
-					<plugins>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-surefire-plugin</artifactId>
-							<version>3.5.2</version>
-							<configuration>
-								<suiteXmlFiles>
-									<suiteXmlFile>testsuites/testngsmoke.xml</suiteXmlFile>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
