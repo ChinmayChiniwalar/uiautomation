@@ -36,13 +36,11 @@ public class LoginTest extends Basetesthere {
 			"iQOO Z9x 5G (Tornado Green, 6GB RAM, 128GB Storage) | Snapdragon 6 Gen 1 with 560k+ AnTuTu Score | 6000mAh Battery with 7.99mm Slim Design | 44W FlashCharge" };
 	List<String> productlist = Arrays.asList(productname);
 
-	@Test(dataProvider="logindata")
-	public void logintest(String username,String password) throws InterruptedException, Exception {
+	@Test(priority=1)
+	public void validuserlogin() throws InterruptedException, Exception {
 
 //Validation of Login with Valid credentials.		
-		Homepage hp = new Homepage(driver);
-		Loginpage login = hp.gotologinpage();
-		hp = login.loginamazon(username, password);
+		Homepage hp =login();
 		String accountname = hp.verifyaccount();
 		System.out.println("assertstartshere-----");
 		//Assert.assertTrue(accountname.contains("Chinmay1"));
@@ -52,9 +50,9 @@ public class LoginTest extends Basetesthere {
 
 	}
 
-	@Test (dependsOnMethods="logintest")
+	@Test (priority=2)
 	public void ordermobilehere() {
-		Homepage hp = new Homepage(driver);
+		Homepage hp=login();
 		Electronicspage ep = hp.secelectmaincategory("Electronics");
 		Mobilespage mp = ep.ecletronicssubcategory("Mobiles & Accessories");
 		mp.filterMobilewithinrange("₹10,000 - ₹20,000");
@@ -64,11 +62,5 @@ public class LoginTest extends Basetesthere {
 
 	}
 	
-	@DataProvider(name="logindata")
-	public String[][] getdata() {
-		
-		String[][] mycredentials= {{"8151041889","Amazon@123"},{"8151041889","Amazon@123"},{"8151041889","Amazon@123"},{"8151041889","Amazon@123"}};
-		return mycredentials;
-	}
 
 }

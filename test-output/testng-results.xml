@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-23T22:34:34 IST" name="Suite" finished-at="2025-01-23T22:34:34 IST" duration-ms="71">
+  <suite started-at="2025-01-27T21:36:09 IST" name="Default suite" finished-at="2025-01-27T21:38:49 IST" duration-ms="160016">
     <groups>
-      <group name="smoke">
-        <method signature="orderlaptops.orderusinghover(java.lang.String,java.lang.String)[pri:2, instance:mobiles_deal.orderlaptops@4135c3b]" name="orderusinghover" class="mobiles_deal.orderlaptops"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-01-23T22:34:34 IST" name="Test" finished-at="2025-01-23T22:34:34 IST" duration-ms="71">
-      <class name="mobiles_deal.orderlaptops">
-        <test-method signature="orderusinghover(java.lang.String,java.lang.String)[pri:2, instance:mobiles_deal.orderlaptops@4135c3b]" started-at="2025-01-23T22:34:34 IST" name="orderusinghover" data-provider="logindata" finished-at="2025-01-23T22:34:34 IST" duration-ms="34" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8151041889]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Amazon@123]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-01-27T21:36:09 IST" name="Default test" finished-at="2025-01-27T21:38:49 IST" duration-ms="160016">
+      <class name="mobiles_deal.LoginTest">
+        <test-method is-config="true" signature="initialsetup()[pri:0, instance:mobiles_deal.LoginTest@1a482e36]" started-at="2025-01-27T21:36:09 IST" name="initialsetup" finished-at="2025-01-27T21:36:35 IST" duration-ms="26211" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- orderusinghover -->
-      </class> <!-- mobiles_deal.orderlaptops -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- initialsetup -->
+        <test-method signature="validuserlogin()[pri:1, instance:mobiles_deal.LoginTest@1a482e36]" started-at="2025-01-27T21:36:35 IST" name="validuserlogin" finished-at="2025-01-27T21:37:08 IST" duration-ms="32555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validuserlogin -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:mobiles_deal.LoginTest@1a482e36]" started-at="2025-01-27T21:37:08 IST" name="closebrowser" finished-at="2025-01-27T21:37:08 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="initialsetup()[pri:0, instance:mobiles_deal.LoginTest@1a482e36]" started-at="2025-01-27T21:37:08 IST" name="initialsetup" finished-at="2025-01-27T21:38:04 IST" duration-ms="56409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialsetup -->
+        <test-method signature="ordermobilehere()[pri:2, instance:mobiles_deal.LoginTest@1a482e36]" started-at="2025-01-27T21:38:04 IST" name="ordermobilehere" finished-at="2025-01-27T21:38:49 IST" duration-ms="44413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ordermobilehere -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:mobiles_deal.LoginTest@1a482e36]" started-at="2025-01-27T21:38:49 IST" name="closebrowser" finished-at="2025-01-27T21:38:49 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- mobiles_deal.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
