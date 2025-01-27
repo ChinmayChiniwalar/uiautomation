@@ -3,6 +3,19 @@
 	<groupId>AmazonAutomate</groupId>
 	<artifactId>MobileCategory</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <release>17</release>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>    
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -15,7 +28,6 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.10.2</version>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
@@ -42,25 +54,6 @@
 							<configuration>
 								<suiteXmlFiles>
 									<suiteXmlFile>testsuites/testngregression.xml</suiteXmlFile>
-								</suiteXmlFiles>
-							</configuration>
-						</plugin>
-					</plugins>
-				</pluginManagement>
-			</build>
-		</profile>
-				<profile>
-			<id>smoke</id>
-			<build>
-				<pluginManagement>
-					<plugins>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-surefire-plugin</artifactId>
-							<version>3.5.2</version>
-							<configuration>
-								<suiteXmlFiles>
-									<suiteXmlFile>testsuites/testngsmoke.xml</suiteXmlFile>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
