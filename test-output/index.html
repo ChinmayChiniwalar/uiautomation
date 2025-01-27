@@ -35,6 +35,7 @@
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
+<<<<<<< HEAD
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
@@ -149,13 +150,31 @@
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">C:\Users\Chinmay\AppData\Local\Temp\testng-eclipse-636334633\testng-customsuite.xml</span>
+=======
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Chinmay\AmznX\uiautomation\testsuites\testngregression.xml</span>
+>>>>>>> 1aa7c664d396c8cca18c8cf88a803d3ace435c7e
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+<<<<<<< HEAD
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+=======
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;postexecution.Listnersclass&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Test&quot;&gt;
+>>>>>>> 1aa7c664d396c8cca18c8cf88a803d3ace435c7e
     &lt;classes&gt;
       &lt;class name=&quot;mobiles_deal.LoginTest&quot;/&gt;
     &lt;/classes&gt;
@@ -197,6 +216,7 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
+<<<<<<< HEAD
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ordermobilehere')
@@ -213,6 +233,16 @@ return data;
               <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
+=======
+data.addRows(0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+>>>>>>> 1aa7c664d396c8cca18c8cf88a803d3ace435c7e
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -241,6 +271,7 @@ return data;
                 <span class="method-name">initialsetup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+<<<<<<< HEAD
               <div class="test-method">
                 <span class="method-name">validuserlogin</span>
                 <span class="method-start">26214 ms</span>
@@ -261,6 +292,8 @@ return data;
                 <span class="method-name">closebrowser</span>
                 <span class="method-start">159775 ms</span>
               </div> <!-- configuration-method after -->
+=======
+>>>>>>> 1aa7c664d396c8cca18c8cf88a803d3ace435c7e
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

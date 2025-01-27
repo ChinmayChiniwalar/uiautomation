@@ -1,6 +1,6 @@
 package pageobjects_amazon;
 
-import static org.testng.Assert.assertTrue;
+
 
 import java.util.List;
 

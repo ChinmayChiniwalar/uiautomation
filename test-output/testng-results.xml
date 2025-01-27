@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -34,4 +35,16 @@
       </class> <!-- mobiles_deal.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-25T22:28:53 IST" name="Suite" finished-at="2025-01-25T22:28:53 IST" duration-ms="0">
+    <groups>
+      <group name="smoke">
+        <method signature="orderlaptops.orderusinghover(java.lang.String,java.lang.String)[pri:2, instance:mobiles_deal.orderlaptops@689604d9]" name="orderusinghover" class="mobiles_deal.orderlaptops"/>
+      </group> <!-- smoke -->
+    </groups>
+  </suite> <!-- Suite -->
+>>>>>>> 1aa7c664d396c8cca18c8cf88a803d3ace435c7e
 </testng-results>
