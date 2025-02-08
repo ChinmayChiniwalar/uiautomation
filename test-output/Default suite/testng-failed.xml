@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mobiles_deal.LoginTest">
+      <class name="ordersAmzn.TC_AMZ_001">
         <methods>
-          <include name="ordermobilehere"/>
           <include name="closebrowser"/>
+          <include name="choclateorder"/>
           <include name="initialsetup"/>
         </methods>
-      </class> <!-- mobiles_deal.LoginTest -->
+      </class> <!-- ordersAmzn.TC_AMZ_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -4,11 +4,11 @@
 	<artifactId>MobileCategory</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	
-<<<<<<< HEAD
-	    <build>
-=======
+
+	  
+
     <build>
->>>>>>> 6e9f37bca785b15609879b0749a4edb8f751c27e
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -19,11 +19,11 @@
                 </configuration>
             </plugin>
         </plugins>
-<<<<<<< HEAD
+
     </build>
-=======
-    </build>    
->>>>>>> 6e9f37bca785b15609879b0749a4edb8f751c27e
+
+    
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
