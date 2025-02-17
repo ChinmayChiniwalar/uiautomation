@@ -52,9 +52,12 @@ public class Homepage extends Abstractcompnents{
 		
 	}
 	
-	public void searchitem(String searchitem) {
+	public Resultsforsearch searchitem(String searchitem) {
 		searchbox.sendKeys(searchitem);
 		searchbutton.click();
+		Resultsforsearch rs=new Resultsforsearch(driver);
+		return rs;
+		
 	}
 	
 	

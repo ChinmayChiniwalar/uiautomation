@@ -58,12 +58,12 @@ public class Basetesthere {
 		System.out.println("i am before method");
 
 	}
-
+	
 	@AfterMethod(groups = "always")
 
 	public void closebrowser() {
 		System.out.println("i am after test");
-		driver.close();
+		//driver.close();
 	}
 
 	public static String getscreenshot(String testcasename) {
@@ -89,5 +89,6 @@ public class Basetesthere {
 		hp = login.loginamazon(username, password);
 		return hp;
 	}
+	
 
 }
