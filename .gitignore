@@ -1,2 +1,8 @@
 /target/
 /.metadata/
+/.settings/
+/hooks/
+/info/
+/.project/
+/HEAD/
+
