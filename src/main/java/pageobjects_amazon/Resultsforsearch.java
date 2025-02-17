@@ -7,6 +7,7 @@ import java.net.URL;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -45,8 +46,9 @@ public class Resultsforsearch extends Abstractcompnents {
 
 			if (searcheditem != null && searcheditem.contains(searchelements)) {
 				System.out.println("Searched element found ");
-
-				searchitem.click();
+				JavascriptExecutor js=(JavascriptExecutor)driver;
+				js.executeScript("arguments[0].click();", searchitem);
+				//searchitem.click();
 				product_added = true;
 				Productpage pp = new Productpage(driver);
 				return pp;
