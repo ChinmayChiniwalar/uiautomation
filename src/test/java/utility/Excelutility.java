@@ -62,14 +62,5 @@ public class Excelutility {
 		fi.close();
 		return data;	
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }

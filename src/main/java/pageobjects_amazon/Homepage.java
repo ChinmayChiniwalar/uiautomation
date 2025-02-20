@@ -59,6 +59,9 @@ public class Homepage extends Abstractcompnents{
 		return rs;
 		
 	}
+	public void clearsearch() {
+		searchbox.clear();
+	}
 	
 	
 	

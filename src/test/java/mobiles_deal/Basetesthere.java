@@ -27,7 +27,9 @@ import pageobjects_amazon.Loginpage;
 public class Basetesthere {
 	public static WebDriver driver;
 	public Properties prop;
-
+	public String xlfilename=System.getProperty("user.dir")+"\\src\\main\\resources\\testdata.xlsx";
+	public String xlsheetname="Sheet1";
+	
 	@BeforeMethod(groups = "always")
 
 	public void initialsetup() throws IOException {
